@@ -1,5 +1,5 @@
 # Aaron Encoder
-# Encode a password by adding +3 to each integer.
+# Encodes a password by adding +3 to each integer.
 def encode(password):
     passwordList = list(password)
     for i in range(len(passwordList)):
