@@ -1,3 +1,4 @@
+# Aaron Encoder
 # Encode a password by adding +3 to each integer.
 def encode(password):
     passwordList = list(password)
@@ -8,6 +9,11 @@ def encode(password):
         passwordList[i] = str(passwordList[i])
     passwordList = ''.join(passwordList)
     return passwordList
+
+# Khaleb Decoder
+# Decodes a password by subtracting -3 to each integer.
+def decode(password):
+    pass
 
 if __name__ == '__main__':
     while True:
@@ -26,7 +32,7 @@ if __name__ == '__main__':
             print('Your password has been encoded and stored!')
         # Encode and decode method
         if menuOption == 2:
-            print(f'The encoded password is {passwordEncoded}, and the original password is.')
+            print(f'The encoded password is {passwordEncoded}, and the original password is {decode(passwordEncoded)}.')
         # Exit the program
         if menuOption == 3:
             break
