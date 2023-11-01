@@ -12,8 +12,12 @@ def encode(password):
 
 # Khaleb Decoder
 # Decodes a password by subtracting -3 to each integer.
-def decode(password):
-    pass
+def decode(passwordEncoded):
+    original_password = ""
+    for digit in passwordEncoded:
+        original_digit = str((int(digit) - 3) % 10)
+        original_password += original_digit
+    return original_password
 
 if __name__ == '__main__':
     while True:
